@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Ex3 {
+	public static void main(String[] args) {
+		String operation;
+		double n1, n2;
+		
+		Scanner reader = new Scanner(System.in);
+		
+		System.out.println("Entre com a operação a ser realizada (+, - ou *):");
+		operation = reader.next();
+		
+		System.out.println("Entre com o primeiro número:");
+		n1 = reader.nextDouble();
+		
+		System.out.println("Entre com o segundo número:");
+		n2 = reader.nextDouble();
+		
+		switch (operation) {
+			case "+":
+				System.out.println(n1 + n2);
+			case "-":
+				System.out.println(n1 - n2);
+			case "*":
+				System.out.println(n1 * n2);
+		}
+	}
+}
